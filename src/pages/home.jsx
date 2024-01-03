@@ -5,13 +5,18 @@ import HandleTweets from '../components/HandleTweets.jsx';
 import { dataTweets } from '../components/DataTweets.js';
 
 
+
 function Home() {
   return (
-    <main className="timeline">
-      <Header />
-      <TweetEditor/>
-      <HandleTweets tweets={dataTweets }/>
-    </main>
+    <>
+      
+      <main className="timeline">
+        <Header />
+        <TweetEditor/>
+        <HandleTweets tweets={dataTweets }/>
+      </main>
+      
+    </>
   );
 }
 
