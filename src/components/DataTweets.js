@@ -50,15 +50,15 @@ export const dataTweets = [
         imgTweet: ImageTweet1,
         
         iconeComment: Reply,
-        NumberComment: 57 ,
+        NumberComment: 19 ,
     
     
         iconeTweet: Retweet,
-        NumberTweet: 144,
+        NumberTweet: 48,
     
     
         iconeLike: ReactLike,
-        NumberLike: 184,
+        NumberLike: 482,
     
     
         iconeShare: Share,  
@@ -74,15 +74,15 @@ export const dataTweets = [
         imgTweet: null,
         
         iconeComment: Reply,
-        NumberComment: 57 ,
+        NumberComment: "6.8K" ,
     
     
         iconeTweet: Retweet,
-        NumberTweet: 144,
+        NumberTweet: "36.6K",
     
     
         iconeLike: ReactLike,
-        NumberLike: 184,
+        NumberLike: 87,
     
     
         iconeShare: Share,    },
@@ -97,15 +97,15 @@ export const dataTweets = [
         imgTweet: null,
         
         iconeComment: Reply,
-        NumberComment: 57 ,
+        NumberComment: "118.7K" ,
     
     
         iconeTweet: Retweet,
-        NumberTweet: 144,
+        NumberTweet: "785.4K",
     
     
         iconeLike: ReactLike,
-        NumberLike: 184,
+        NumberLike: 300,
     
     
         iconeShare: Share, 
@@ -121,15 +121,15 @@ export const dataTweets = [
         imgTweet: Mbokelengi,
         
         iconeComment: Reply,
-        NumberComment: 57 ,
+        NumberComment: "3M" ,
     
     
         iconeTweet: Retweet,
-        NumberTweet: 144,
+        NumberTweet: "4.4M",
     
     
         iconeLike: ReactLike,
-        NumberLike: 184,
+        NumberLike: 578,
     
     
         iconeShare: Share,
