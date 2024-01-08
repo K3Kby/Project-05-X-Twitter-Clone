@@ -1,4 +1,4 @@
-import PhProfileCnn from "../images/Profile-photoCNN.png";
+import PhProfileCnn from "../images/Profile-photoCNN.svg";
 import NytProfile from "../images/Profile-Photo-NYTimes.svg";
 import XProfile from "../images/Profile-Photo-X.svg";
 import Certificat from "../images/Certificat.svg";
@@ -12,6 +12,7 @@ import Mbokelengi from "../images/Mbok'Elengi.jpg";
 
 export const dataTweets = [
     {
+        userId: 1,
         photoProfile: PhProfileCnn,
         name:"CNN",
         iconeCertification: Certificat,
@@ -19,27 +20,27 @@ export const dataTweets = [
         timeTweet: "7m",
         textTweet:"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
         imgTweet: null,
-        actionIcon: 
-        [
-            {
-                iconeReply: Reply,
-                replyNumber: 57 ,
-            },
-            {
-                iconeReply: Retweet,
-                replyNumber: 144,
-            },
-            {
-                iconeReply: ReactLike,
-                replyNumber: 184,
-            },
-            {
-                iconeReply: Share,
+        
+            
+                iconeComment: Reply,
+                NumberComment: 57 ,
+            
+            
+                iconeTweet: Retweet,
+                NumberTweet: 144,
+            
+            
+                iconeLike: ReactLike,
+                NumberLike: 184,
+            
+            
+                iconeShare: Share,
                 
-            }
-        ]
+            
+        
     },
     {
+        userId: 2,
         photoProfile: NytProfile,
         name:"The New York Times",
         iconeCertification: Certificat,
@@ -47,27 +48,23 @@ export const dataTweets = [
         timeTweet: "2h",
         textTweet:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
         imgTweet: ImageTweet1,
-        actionIcon: 
-            [
-                {
-                    iconeReply: Reply,
-                    replyNumber: 19 ,
-                },
-                {
-                    iconeReply: Retweet,
-                    replyNumber: 48,
-                },
-                {
-                    iconeReply: ReactLike,
-                    replyNumber: 482,
-                },
-                {
-                    iconeReply: Share,
-                    
-                }
-            ]  
+        
+        iconeComment: Reply,
+        NumberComment: 19 ,
+    
+    
+        iconeTweet: Retweet,
+        NumberTweet: 48,
+    
+    
+        iconeLike: ReactLike,
+        NumberLike: 482,
+    
+    
+        iconeShare: Share,  
     },
     {
+        userId: 3,
         photoProfile: XProfile,
         name:"Tweeter",
         iconeCertification: Certificat,
@@ -75,27 +72,22 @@ export const dataTweets = [
         timeTweet: "Oct 29",
         textTweet:"BIG NEWS lol jk still Twitter",
         imgTweet: null,
-        actionIcon: 
-        [
-            {
-                iconeReply: Reply,
-                replyNumber: "6.8K" ,
-            },
-            {
-                iconeReply: Retweet,
-                replyNumber: "36.6K",
-            },
-            {
-                iconeReply: ReactLike,
-                replyNumber: "267.1K",
-            },
-            {
-                iconeReply: Share,
-                
-            }
-        ]
-    },
+        
+        iconeComment: Reply,
+        NumberComment: "6.8K" ,
+    
+    
+        iconeTweet: Retweet,
+        NumberTweet: "36.6K",
+    
+    
+        iconeLike: ReactLike,
+        NumberLike: 87,
+    
+    
+        iconeShare: Share,    },
     {
+        userId: 3,
         photoProfile: XProfile,
         name:"Tweeter",
         iconeCertification: Certificat,
@@ -103,27 +95,23 @@ export const dataTweets = [
         timeTweet: "Oct 4",
         textTweet:"hello literally everyone",
         imgTweet: null,
-        actionIcon: 
-        [
-            {
-                iconeReply: Reply,
-                replyNumber: "118.7K" ,
-            },
-            {
-                iconeReply: Retweet,
-                replyNumber: "785.4K",
-            },
-            {
-                iconeReply: ReactLike,
-                replyNumber: "3.3M",
-            },
-            {
-                iconeReply: Share,
-                
-            }
-        ] 
+        
+        iconeComment: Reply,
+        NumberComment: "118.7K" ,
+    
+    
+        iconeTweet: Retweet,
+        NumberTweet: "785.4K",
+    
+    
+        iconeLike: ReactLike,
+        NumberLike: 300,
+    
+    
+        iconeShare: Share, 
     },
     {
+        userId: 3,
         photoProfile: XProfile,
         name:"Tweeter",
         iconeCertification: Certificat,
@@ -131,24 +119,19 @@ export const dataTweets = [
         timeTweet: "Oct 4",
         textTweet:"Kinshasa, Mbok'Elengi",
         imgTweet: Mbokelengi,
-        actionIcon: 
-        [
-            {
-                iconeReply: Reply,
-                replyNumber: "100.5K" ,
-            },
-            {
-                iconeReply: Retweet,
-                replyNumber: "144.8M",
-            },
-            {
-                iconeReply: ReactLike,
-                replyNumber: "555M",
-            },
-            {
-                iconeReply: Share,
-                
-            }
-        ]
+        
+        iconeComment: Reply,
+        NumberComment: "3M" ,
+    
+    
+        iconeTweet: Retweet,
+        NumberTweet: "4.4M",
+    
+    
+        iconeLike: ReactLike,
+        NumberLike: 578,
+    
+    
+        iconeShare: Share,
     }
 ];

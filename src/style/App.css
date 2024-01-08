@@ -12,6 +12,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .timeline {
@@ -192,4 +193,207 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.tweet-action:nth-child(1):hover img {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+.tweet-action:nth-child(1):hover span {
+    color: rgb(0, 0, 255);
+}
+.tweet-action:nth-child(2):hover img {
+    background-color: rgba(0, 128, 0, 0.3);
+}
+.tweet-action:nth-child(2):hover span {
+    color: rgb(0, 128, 0);
+}
+.tweet-action:nth-child(3):hover img {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.tweet-action:nth-child(3):hover span {
+    color: rgb(255, 0, 0);
+}
+.tweet-action:nth-child(4):hover img {
+    background-color: rgba(29, 155, 240, 0.3);
+}
+
+.tweet-action img{
+    padding: 10px;
+    border-radius: 10px;
+}
+.tweet-action div{
+    padding: 0 9px;
+    border-radius: 10px;
+}
+
+
+.sidebar{
+    padding: 2.5rem 0;
+    width: 250px;
+    height: 100vh;
+    position: relative;
+    
+    
+}
+.divsidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    align-items: center;
+    position: fixed;
+    width: 250px;
+    left: 0;
+}
+.nav-Links{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 50px ;
+    font-family: 'Inter', sans-serif;
+    gap: 25px;
+    padding: 0rem 0rem 2rem 5rem; 
+    cursor: pointer;
+
+}
+
+.nav-Links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-Links li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    
+}
+.side{
+    padding: 20px 80px;
+    /* margin-left: 120px; */
+    font-size: 25px;
+}
+
+.identifiant-Side-Bar{
+    margin-top: 180px ;
+    display: flex;
+}
+ 
+
+      
+.trends{
+    padding: 2.5rem 0;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.input-search{
+    display: flex;
+    gap: 20px;
+    height: 55px;
+    width: 400px;
+    background-color: rgb(76, 76, 78);
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 20px;
+}
+.searchTwit{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    resize: none;
+    font-size: 20px;
+}
+.trending-lists{
+    
+    background-color: rgb(76, 76, 78);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.trendsTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trendhashtag div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.trendhashtag p {
+    color: gray;
+    font-size: 18px;
+    }
+.trendhashtag img {
+        cursor: pointer;
+        }
+.showmore{
+    cursor: pointer;
+    color:#1D9BF0;
+}
+.followings{
+    background-color: rgb(76, 76, 78);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.followdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.profileFollow{
+    width: 50px;
+    height: 50px;
+}
+.identitifiantFollow{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.infoFollow{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.identitifiantFollow span {
+    color: gray;
+}
+.followdiv button{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 20px;
+}
+.footer{
+    color: gray;
+}
+.profileSide{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+}
+.profileNameSide{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.profileSide span{
+    color: gray;
 }

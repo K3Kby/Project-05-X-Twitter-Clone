@@ -4,14 +4,16 @@ import Icone2 from '../images/Icones/Icone2.svg';
 import Icone3 from '../images/Icones/Icone3.svg';
 import Icone4 from '../images/Icones/Icone4.svg';
 import Icone5 from '../images/Icones/Icone5.svg';
+import { Link } from 'react-router-dom';
 
 function TweetEditor (){
   return (
     <div className="tweet-editor"> 
+    <Link to={"/UserProfile"}>
         <aside className="avatar"> 
-           <a href="#"><img src={Profile} alt='Profile-photo' /></a>
+           <img src={Profile} alt='Profile-photo' />
         </aside>
-        
+    </Link>
         <div className='tweet-editor-form'>
             <input type="text" className='tweet-editor-input' placeholder="What's happening?"  size=" " ></input>
          <div className='tweet-editor-buttons'>
