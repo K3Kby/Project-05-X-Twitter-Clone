@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { userProfil } from '../components/Users';
+import { userProfil } from '..//Utiles/Users';
 import { GrLinkPrevious } from "react-icons/gr";
 import { RxLink2 } from "react-icons/rx";
 import { SlCalender } from "react-icons/sl";

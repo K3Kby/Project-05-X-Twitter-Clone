@@ -1,8 +1,8 @@
 import SearchTwitter from "..//images/IconesTrends/SearchTwitter.svg";
 import HandleTrends from "./HandleTrends";
-import { dataTrends } from "./DataTrends";
-import Followings from "./Followings";
-import { dataTweets } from "./DataTweets";
+import { dataTrends } from "..//Utiles/DataTrends";
+import Followings from ".//Followings";
+import { dataTweets } from "..//Utiles/DataTweets";
 import Footer from "./Footer";
 function Trends (){
     return (

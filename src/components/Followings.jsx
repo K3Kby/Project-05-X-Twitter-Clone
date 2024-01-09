@@ -7,7 +7,7 @@ function Followings({Follows}) {
         {Follows.slice(0,3).map((follow, id) => (
             <div className='followdiv' key={id}>
                 <div className='identitifiantFollow'>
-                    <img className='profileFollow' src={follow.photoProfile} alt="" />
+                    <img className='profileFollow' src={follow.avatarImage} alt="" />
                     <div>
                         <div className='infoFollow'>
                             <p>{follow.name} </p>

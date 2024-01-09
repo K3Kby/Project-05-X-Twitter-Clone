@@ -12,13 +12,13 @@ import Mbokelengi from "../images/Mbok'Elengi.jpg";
 
 export const dataTweets = [
     {
-        userId: 1,
-        photoProfile: PhProfileCnn,
+        username: 1,
+        avatarImage: PhProfileCnn,
         name:"CNN",
         iconeCertification: Certificat,
         mail:"@cnn",
         timeTweet: "7m",
-        textTweet:"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+        textTweet:"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
         imgTweet: null,
         
             
@@ -40,8 +40,8 @@ export const dataTweets = [
         
     },
     {
-        userId: 2,
-        photoProfile: NytProfile,
+        username: 2,
+        avatarImage: NytProfile,
         name:"The New York Times",
         iconeCertification: Certificat,
         mail:"@nytimes",
@@ -64,8 +64,8 @@ export const dataTweets = [
         iconeShare: Share,  
     },
     {
-        userId: 3,
-        photoProfile: XProfile,
+        username: 3,
+        avatarImage: XProfile,
         name:"Tweeter",
         iconeCertification: Certificat,
         mail:"@Tweeter",
@@ -87,8 +87,8 @@ export const dataTweets = [
     
         iconeShare: Share,    },
     {
-        userId: 3,
-        photoProfile: XProfile,
+        username: 3,
+        avatarImage: XProfile,
         name:"Tweeter",
         iconeCertification: Certificat,
         mail:"@Tweeter",
@@ -111,8 +111,8 @@ export const dataTweets = [
         iconeShare: Share, 
     },
     {
-        userId: 3,
-        photoProfile: XProfile,
+        username: 3,
+        avatarImage: XProfile,
         name:"Tweeter",
         iconeCertification: Certificat,
         mail:"@Tweeter",
