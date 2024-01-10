@@ -5,13 +5,13 @@ body{
     background-color: black;
     color: white;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1700px;
 }
 
 #root{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 
@@ -260,7 +260,7 @@ body{
 .nav-Links ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     list-style: none;
 }
 
@@ -285,18 +285,19 @@ body{
 
       
 .trends{
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     width: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+   
 }
 .input-search{
     display: flex;
     gap: 20px;
     height: 55px;
-    width: 400px;
+    width: 100%;
     background-color: rgb(76, 76, 78);
     align-items: center;
     padding: 10px;
@@ -385,6 +386,7 @@ justify-content: space-between;
     display: flex;
     gap: 20px;
     align-items: center;
+    padding-left: 75px;
     position: fixed;
     bottom: 10px;
 }

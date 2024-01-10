@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { FcLike } from "react-icons/fc";
 
 function ActionTweets({icone, number, description}) {
@@ -17,7 +17,7 @@ function ActionTweets({icone, number, description}) {
   return (
     <div onClick={(event) => {handleClick()}} className="tweet-action">
         {
-            description === "Like" && isCounter ? <div> <FcLike /></div> : <img src={icone} alt="" title={description} />
+            description === "Like" && isCounter ? <div> <FcLike style= {{width: "20px" }} /></div> : <img src={icone} alt="" title={description} />
         }
         <span>{counterTweet} </span>
     </div>
