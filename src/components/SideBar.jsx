@@ -35,7 +35,7 @@ function SideBar (){
                 </Link>
                 <li><img src={More} alt='More' />More</li>
                 <div>
-        <button className="button side" type="button">Tweet</button>
+        <button type="button" className='bg-blue-500 py-[.7rem] px-[5.5rem] rounded-full'>Tweet</button>
         </div>
             </ul>
             

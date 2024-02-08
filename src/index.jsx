@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/layout'
 import Home from './pages/home'
 import PageUsers from './pages/PageUsers'
-import UserProfile from './components/UserProfile'
+
 
 const router = createBrowserRouter([
   {
@@ -17,12 +17,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/Username/:id',
+        path: ':userName',
         element: <PageUsers />
-      },
-      {
-        path: "/UserProfile",
-        element: <UserProfile />
       }
     ]
   }

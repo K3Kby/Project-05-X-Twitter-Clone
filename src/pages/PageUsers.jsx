@@ -1,18 +1,29 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { userProfil } from '..//Utiles/Users';
 import { GrLinkPrevious } from "react-icons/gr";
 import { RxLink2 } from "react-icons/rx";
 import { SlCalender } from "react-icons/sl";
 import { RiUserFollowFill } from "react-icons/ri";
 import '../style/userName.css'
+import { useTweetContext } from '../Utiles/TweetContext';
+import HandleTweets from '../components/HandleTweets';
+import Certificat from "../images/Certificat.svg";
 
 function PageUsers() {
-    const {id} = useParams ();
 
-    const userfind = userProfil.find((user) => {
-        return user.userId == id;
+    const {userProfils} = useTweetContext()
+    const {tweets} = useTweetContext()
+
+    const {userName} = useParams ();
+
+    const userfind = userProfils.find((user) => {
+        return user.userName == userName;
     })
+
+    const tweetFilter = tweets.filter((tweet) => {
+      return tweet.userId === userfind.userId
+    } )
+
   return (
     <div className="timeline">
       <div className="username-entete">
@@ -21,9 +32,9 @@ function PageUsers() {
         </Link>
         <div>
           <h2>
-            {userfind.userName} <img src={userfind.iconCertification} alt="" />
+            {userfind.userName} <img src={Certificat} alt="" />
           </h2>
-          <span className="username-span">{userfind.posts} posts</span>
+          <span className="username-span">{tweetFilter.length} posts</span>
         </div>
       </div>
       <div className="user-content">
@@ -38,7 +49,7 @@ function PageUsers() {
       </div>
       <div className="user-text">
         <h2>
-          {userfind.userName} <img src={userfind.iconCertification} alt="" />
+          {userfind.userName} <img src={Certificat} alt="" />
         </h2>
         <span className="username-span">{userfind.lienProfil} </span>
       </div>
@@ -72,6 +83,9 @@ function PageUsers() {
         <li>Médias</li>
         <li>J'aime</li>
       </ul>
+      <div>
+      <HandleTweets tweets={tweetFilter} />
+      </div>
     </div>
 
   )

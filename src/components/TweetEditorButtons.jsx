@@ -1,4 +1,5 @@
-import Icone1 from '../images/Icones/Icone1.svg';
+
+import { Link } from 'react-router-dom';
 import Icone2 from '../images/Icones/Icone2.svg';
 import Icone3 from '../images/Icones/Icone3.svg';
 import Icone4 from '../images/Icones/Icone4.svg';
@@ -8,13 +9,12 @@ function TweetEditorButtons (){
   return (
          <div className='tweet-editor-buttons'>
             <section className='tweet-editor-actions'>
-                <a href=" "><img src={Icone1} alt='Image' /></a>
-                <a href=" "><img src={Icone2} alt='Gif' /></a>
-                <a href=" "><img src={Icone3} alt='Stat' /></a>
-                <a href=" "><img src={Icone4} alt='Smiley' /></a>
-                <a href=" "><img src={Icone5} alt='Calendrier' /></a>
+                <Link ><img src={Icone2} alt='Gif' /></Link>
+                <Link ><img src={Icone3} alt='Stat' /></Link>
+                <Link ><img src={Icone4} alt='Smiley' /></Link>
+                <Link ><img src={Icone5} alt='Calendrier' /></Link>
             </section>
-            <button className='button' type="button">Tweet</button>
+            <button className='bg-blue-500 py-[.7rem] px-[1.5rem] rounded-full' type="submit">Tweet</button>
           </div>
 
   );

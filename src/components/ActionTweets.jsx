@@ -1,25 +1,22 @@
  import React, { useState } from 'react';
 import { FcLike } from "react-icons/fc";
+import { useTweetContext } from '../Utiles/TweetContext';
 
-function ActionTweets({icone, number, description}) {
-    const [counterTweet, setCounterTweet]=useState(number);
-    const [isCounter, setIsCounter]=useState(false);
+function ActionTweets({icone, number, description, id, isLikeTweet}) {
+
+  const {toggleLike} = useTweetContext()
 
     const handleClick = () =>{ 
-        if(isCounter){
-            setCounterTweet(counterTweet - 1);
-            setIsCounter(false)
-         }else{
-            setCounterTweet(counterTweet + 1);
-            setIsCounter(true)
-         }
+        toggleLike(id)
     }
+
+   
   return (
     <div onClick={(event) => {handleClick()}} className="tweet-action">
         {
-            description === "Like" && isCounter ? <div> <FcLike style= {{width: "20px" }} /></div> : <img src={icone} alt="" title={description} />
+            description === "Like" && isLikeTweet ? <div> <FcLike style= {{width: "20px" }} /></div> : <img src={icone} alt="" title={description} />
         }
-        <span>{counterTweet} </span>
+        <span>{number} </span>
     </div>
   )
 }
