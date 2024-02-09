@@ -70,12 +70,12 @@ function TweetEditorForm (){
 
 
   return (
-        <div className='tweet-editor-form'>
+        <div className='flex-auto'>
           <form onSubmit={handleSubmit((data) => handleCreateTweet(data))}>
-            <input
+            <input className='h-[60px] w-full border-none outline-none text-white bg-black p-10 resize-none text-xl my-13'
             {...register("description", {required:true, maxLength:180})}
-            type="text" className='tweet-editor-input' placeholder="What's happening?"   />
-            {errors.description && <p>Ce champ est obligatoire et ne doit pas dépasser 180 caractères.</p> }
+            type="text"  placeholder="What's happening?"   />
+            {errors.description && <p className='bold text-red-700'>Ce champ est obligatoire et ne doit pas dépasser 180 caractères.</p> }
             <div className='flex items-center justify-start gap-4'>
             <label htmlFor={`file-input`} className="relative cursor-pointer">
               <input

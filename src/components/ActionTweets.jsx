@@ -12,12 +12,16 @@ function ActionTweets({icone, number, description, id, isLikeTweet}) {
 
    
   return (
-    <div onClick={(event) => {handleClick()}} className="tweet-action">
+    <button onClick={(event) => {handleClick()}}  className="flex items-center justify-center gap-2.5 max-w-max group">
         {
-            description === "Like" && isLikeTweet ? <div> <FcLike style= {{width: "20px" }} /></div> : <img src={icone} alt="" title={description} />
+            description === "Like" && isLikeTweet ? <div className='px-2'> <FcLike style= {{width: "20px" }} /></div> : <img className='group-hover:bg-pink-600 p-2.5 rounded-xl' src={icone} alt="" title={description} />
         }
-        <span>{number} </span>
-    </div>
+        {description === "Like" && isLikeTweet ? (
+          <span className='text-orange-600'>{number} </span>
+        ) : (
+          <span className='group-hover:text-pink-600'>{number} </span>
+        )}
+    </button>
   )
 }
 

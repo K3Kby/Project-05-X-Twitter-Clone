@@ -1,4 +1,5 @@
 import React from 'react'
+import Certificat from "../images/Certificat.svg";
 
 function Followings({Follows}) {
   return (
@@ -10,8 +11,8 @@ function Followings({Follows}) {
                     <img className='profileFollow' src={follow.avatarImage} alt="" />
                     <div>
                         <div className='infoFollow'>
-                            <p>{follow.name} </p>
-                            <img src={follow.iconeCertification} alt="" />
+                            <p>{follow.userName} </p>
+                            <img src={Certificat} alt="" />
                         </div>
                         <span>{follow.mail} </span>
                     </div>

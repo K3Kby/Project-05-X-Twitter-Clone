@@ -30,7 +30,7 @@ function PageUsers() {
         <Link to={"/"} className="link-white">
           <GrLinkPrevious />
         </Link>
-        <div>
+        <div >
           <h2>
             {userfind.userName} <img src={Certificat} alt="" />
           </h2>

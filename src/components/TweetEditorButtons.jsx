@@ -7,8 +7,8 @@ import Icone5 from '../images/Icones/Icone5.svg';
 
 function TweetEditorButtons (){
   return (
-         <div className='tweet-editor-buttons'>
-            <section className='tweet-editor-actions'>
+         <div className='flex gap-[400px]'>
+            <section className='flex items-center justify-start gap-4'>
                 <Link ><img src={Icone2} alt='Gif' /></Link>
                 <Link ><img src={Icone3} alt='Stat' /></Link>
                 <Link ><img src={Icone4} alt='Smiley' /></Link>

@@ -8,9 +8,9 @@ export const useTweetContext = () => {
 }
 
 export const TweetProvider = ({ children }) => {
-    const [tweets, setTweets] = useState([]);
+    const [tweets, setTweets] = useState([]); 
     const [userProfils, setPserProfils] = useState([]);
-    
+
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
